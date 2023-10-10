@@ -9,40 +9,88 @@
 
     <h1>Company Inc.</h1>
     <h2>For all your incorporated company needs</h2>
-
-    <!-- First, create a form tag where our inputs will be nested -->
-
-
-      <!-- Add a label for 'fullname'-->
-
-      <!-- Add a text input with the id and name attributes set to 'fullname' -->
-      <!-- Include the place holder text "Enter Name" and make this input required -->
-
-
-      <!-- Add a label for 'email'-->
-
-      <!-- Add a email input with the id and name attributes set to 'email' -->
-      <!-- Include the place holder text "Enter Email" and make this input required -->
-
-
-      <!-- Add a label for 'phone'-->
-
-      <!-- Add a telephone input with the id and name attributes set to 'phone' -->
-      <!-- Include the place holder text "Enter Telephone (optional)" -->
-
-
-      <!-- Add a label for 'message'-->
-
-      <!-- Add a textarea tag with the id and name attributes set to 'message' -->
-      <!-- Include the place holder text "Enter Message" -->
-
-
-      <!-- Add a checkbox input with the id set to 'checkbox' -->
-
-
-
-      <!-- Add an input with the type set to 'submit' -->
-
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Form</title>
+        <style>
+            /* You can add some basic styling here if needed */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+    
+            form {
+                max-width: 400px;
+                margin: 0 auto;
+            }
+    
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+    
+            input,
+            textarea {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+            }
+    
+            input[type="checkbox"] {
+                margin-bottom: 20px;
+            }
+    
+            input[type="submit"] {
+                background-color: #4caf50;
+                color: white;
+                padding: 10px 15px;
+                border: none;
+                cursor: pointer;
+                font-size: 16px;
+            }
+    
+            input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+        </style>
+    </head>
+    
+    <body>
+    
+        <form action="#" method="post">
+            <!-- Full Name -->
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter Name" required>
+    
+            <!-- Email Address -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email" required>
+    
+            <!-- Telephone Number -->
+            <label for="telephone">Telephone (optional):</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="Enter Telephone (optional)">
+    
+            <!-- Message -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Enter Message" required></textarea>
+    
+            <!-- Checkbox -->
+            <input type="checkbox" id="subscribe" name="subscribe" checked>
+            <label for="subscribe">Subscribe to our newsletter</label>
+    
+            <!-- Submit Button -->
+            <input type="submit" value="Submit">
+        </form>
+    
+    </body>
+    
+    </html>
+    
     
   </body>
 </html>
